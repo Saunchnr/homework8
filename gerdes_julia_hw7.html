@@ -144,11 +144,11 @@ $.getJSON("data/blood_lead.geojson",function(data){
 }
 
 function setColorFunc(density){
-    return density > 50 ? '#c9ff00' :
-           density > 25 ? '#49ff00' :
-           density > 10 ? '#00ffec' :
-           density > 0 ? '#FFF8DC' :
-                         '#110022';
+    return density > 50 ? '#ffb3ab' :
+           density > 25 ? '#ff585d' :
+           density > 10 ? '#862633' :
+           density > 0 ? '#51284f' :
+                         '#2e1a47';
 };
 		// set the highlight of polygon
 		var highlight = {
@@ -225,12 +225,12 @@ legend.onAdd = function (map) {
     div.innerHTML += '<b>Blood lead level</b><br />';
     div.innerHTML += 'by census tract<br />';
     div.innerHTML += '<br>';
-    div.innerHTML += '<i style="background: #c9ff00"></i><p>15+</p>';
-    div.innerHTML += '<i style="background: #49ff00"></i><p>10-15</p>';
-    div.innerHTML += '<i style="background: #00ffec"></i><p>5-10</p>';
-    div.innerHTML += '<i style="background: #FFF8DC"></i><p>0-5</p>';
+    div.innerHTML += '<i style="background: #ffb3ab"></i><p>15+</p>';
+    div.innerHTML += '<i style="background: #ff585d"></i><p>10-15</p>';
+    div.innerHTML += '<i style="background: #862633"></i><p>5-10</p>';
+    div.innerHTML += '<i style="background: #51284f"></i><p>0-5</p>';
     div.innerHTML += '<hr>';
-    div.innerHTML += '<i style="background: #110022"></i><p>No_Data</p>';
+    div.innerHTML += '<i style="background: #2e1a472"></i><p>No_Data</p>';
     
     // Return the Legend div containing the HTML content
     return div;
